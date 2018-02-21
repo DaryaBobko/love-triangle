@@ -24,7 +24,8 @@ let f = function getLoveTrianglesCount(preferences = []) {
       beloved : preferences[preferences[preferences[i]-1]-1]
     } 
 
-    if (lovePair3.beloved === lovePair1.lover) {
+    if (lovePair3.beloved === lovePair1.lover && lovePair1.beloved === lovePair2.lover && lovePair2.beloved === lovePair3.lover &&
+      lovePair1.lover !== lovePair2.lover && lovePair2.lover !== lovePair3.lover && lovePair1.lover !== lovePair3.lover ) {
       count++;
       preferences[i] = undefined;
       preferences[preferences[i]-1] = undefined;

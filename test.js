@@ -1,5 +1,14 @@
 const assert = require('assert');
 const getLoveTrianglesCount = require('./src/index');
+const mocha = require('mocha');
+
+// function describe(arg1, arg2){
+//   arg2();
+// }
+
+// function it(arg1, arg2){
+//   arg2();
+// }
 
 describe('Love triangles', () => {
   it('1', () => {
